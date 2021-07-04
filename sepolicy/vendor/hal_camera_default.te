@@ -52,5 +52,9 @@ set_prop(hal_camera_default, vendor_camera_prop)
 
 hal_client_domain(hal_camera_default, hal_graphics_allocator)
 
+allow hal_camera_default gpu_device:chr_file rw_file_perms;
+
+r_dir_file(hal_camera_default, app_efs_file);
+
 # Libexynoscamera3 wants to read ro.factory.factory_binary which is not properly namespaced
 dontaudit hal_camera_default default_prop:file read;
