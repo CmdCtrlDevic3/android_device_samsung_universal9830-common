@@ -2,17 +2,17 @@
 # Vendor security patch level 2025-01-01
 
 # Audio
--vendor/lib/libSamsungPostProcessConvertor.so
--vendor/lib/lib_SoundAlive_SRC384_ver320.so
--vendor/lib/lib_soundaliveresampler.so
--vendor/lib64/libSamsungPostProcessConvertor.so
--vendor/lib64/lib_SoundAlive_SRC384_ver320.so
--vendor/lib64/lib_soundaliveresampler.so
+vendor/lib/libSamsungPostProcessConvertor.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_soundaliveresampler.so
+vendor/lib64/libSamsungPostProcessConvertor.so
+vendor/lib64/lib_SoundAlive_SRC384_ver320.so
+vendor/lib64/lib_soundaliveresampler.so
 
 # Audio (Dolby Atmos)
--vendor/lib/libprofileparamstorage.so
--vendor/lib/libsecaudiocoreutils.so
--vendor/lib/libspatializerparamstorage.so
+vendor/lib/libprofileparamstorage.so
+vendor/lib/libsecaudiocoreutils.so
+vendor/lib/libspatializerparamstorage.so
 
 # Audio (Firmware)
 vendor/firmware/APSV_AUDIO_SLSI.bin
@@ -65,102 +65,102 @@ vendor/firmware/txse3.bin
 vendor/firmware/volumemonitor.bin
 
 # Camera
--vendor/lib64/libSEF.quram.so
--vendor/lib64/libbayergdccore.so
--vendor/lib64/libexynoscamera_fakefusion.so
--vendor/lib64/libexynoscamera_fakefusion_plugin.so
--vendor/lib64/libexynoscamera_plugin.so
--vendor/lib64/libexynoscamera_plugin_utils.so
--vendor/lib64/libhwjsqz.so
--vendor/lib64/libsensorlistener.so
--vendor/lib64/libuniapi.so
--vendor/lib64/libuniplugin.so
--vendor/lib64/libvpl.so
--vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+vendor/lib64/libSEF.quram.so
+vendor/lib64/libbayergdccore.so
+vendor/lib64/libexynoscamera_fakefusion.so
+vendor/lib64/libexynoscamera_fakefusion_plugin.so
+vendor/lib64/libexynoscamera_plugin.so
+vendor/lib64/libexynoscamera_plugin_utils.so
+vendor/lib64/libhwjsqz.so
+vendor/lib64/libsensorlistener.so
+vendor/lib64/libuniapi.so
+vendor/lib64/libuniplugin.so
+vendor/lib64/libvpl.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Exynos Multi-Format Codec (MFC) Firmware
 vendor/firmware/mfc_fw.bin
 
 # Gatekeeper
--vendor/lib64/hw/gatekeeper.exynos990.so
+vendor/lib64/hw/gatekeeper.exynos990.so
 
 # GPS
 vendor/bin/hw/gps.sh
--vendor/bin/hw/gpsd
--vendor/bin/hw/lhd
--vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
+vendor/bin/hw/gpsd
+vendor/bin/hw/lhd
+vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
 vendor/etc/gnss/gps.cer
 vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc
 vendor/etc/sensor/lhd.conf
--vendor/lib64/hw/android.hardware.gnss@2.1-impl.so;FIX_SONAME
--vendor/lib64/hw/flp.default.so;FIX_SONAME
--vendor/lib64/hw/gps.default.so;FIX_SONAME
--vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so
--vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
--vendor/lib64/vendor.samsung.hardware.gnss@2.1.so
+vendor/lib64/hw/android.hardware.gnss@2.1-impl.so;FIX_SONAME
+vendor/lib64/hw/flp.default.so;FIX_SONAME
+vendor/lib64/hw/gps.default.so;FIX_SONAME
+vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so
+vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+vendor/lib64/vendor.samsung.hardware.gnss@2.1.so
 
 # Graphics
--vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
--vendor/lib/hw/vulkan.mali.so
--vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
--vendor/lib64/hw/vulkan.mali.so
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
+vendor/lib/hw/vulkan.mali.so
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
+vendor/lib64/hw/vulkan.mali.so
 
 # Hotword Enrollment
 system/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system/system_ext/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Keymaster
--vendor/bin/hw/android.hardware.keymaster@4.0_strongbox-service
+vendor/bin/hw/android.hardware.keymaster@4.0_strongbox-service
 vendor/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc
--vendor/lib64/libkeymaster_helper.so
--vendor/lib64/libskeymaster4device.so
+vendor/lib64/libkeymaster_helper.so
+vendor/lib64/libskeymaster4device.so
 
 # Neural Networks
--vendor/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv
--vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv
+vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service
 vendor/etc/eden/gpu/eden_kernel_64.bin
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc
 vendor/etc/init/vendor.samsung_slsi.hardware.eden_runtime@1.0-service.rc
--vendor/lib64/libcommon.so
--vendor/lib64/libcrane_compiler.so
--vendor/lib64/libeden_model.so
--vendor/lib64/libeden_nn.so
--vendor/lib64/libeden_nn_on_vendor.so
--vendor/lib64/libeden_osal.so
--vendor/lib64/libeden_profiler.so
--vendor/lib64/libeden_rt.so
--vendor/lib64/libeden_rt_stub_vendor.edensdk.samsung.so
--vendor/lib64/libeden_ud_cpu.so
--vendor/lib64/libeden_ud_dsp.so
--vendor/lib64/libeden_ud_gpu.so
--vendor/lib64/libeden_ud_npu.so
--vendor/lib64/libeden_wrapper.so
--vendor/lib64/libeden_wrapper_sdk.so
--vendor/lib64/libeden_xtool.so
--vendor/lib64/libenn_dsp_dal.so
--vendor/lib64/libenn_dsp_fw_graph_parser.so
--vendor/lib64/libenn_dsp_kernels_cpu.so
--vendor/lib64/libgraphgen_ann_import.so
--vendor/lib64/libgraphgen_ann_nnc.so
--vendor/lib64/libgraphgen_api.so
--vendor/lib64/libgraphgen_export.so
--vendor/lib64/libgraphgen_import.so
--vendor/lib64/libgraphgen_intermediate_process.so
--vendor/lib64/libgraphgen_misc.so
--vendor/lib64/libgraphgen_network.so
--vendor/lib64/libir.so
--vendor/lib64/libnpu_compiler.so
--vendor/lib64/libnpuc_api.so
--vendor/lib64/libnpuc_backend.so
--vendor/lib64/libnpuc_cmdq.so
--vendor/lib64/libnpuc_common.so
--vendor/lib64/libnpuc_controller.so
--vendor/lib64/libnpuc_frontend.so
--vendor/lib64/libnpuc_graph.so
--vendor/lib64/libnpuc_template.so
--vendor/lib64/libsait_npu_compiler.so
--vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0-impl.so
--vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0.so
+vendor/lib64/libcommon.so
+vendor/lib64/libcrane_compiler.so
+vendor/lib64/libeden_model.so
+vendor/lib64/libeden_nn.so
+vendor/lib64/libeden_nn_on_vendor.so
+vendor/lib64/libeden_osal.so
+vendor/lib64/libeden_profiler.so
+vendor/lib64/libeden_rt.so
+vendor/lib64/libeden_rt_stub_vendor.edensdk.samsung.so
+vendor/lib64/libeden_ud_cpu.so
+vendor/lib64/libeden_ud_dsp.so
+vendor/lib64/libeden_ud_gpu.so
+vendor/lib64/libeden_ud_npu.so
+vendor/lib64/libeden_wrapper.so
+vendor/lib64/libeden_wrapper_sdk.so
+vendor/lib64/libeden_xtool.so
+vendor/lib64/libenn_dsp_dal.so
+vendor/lib64/libenn_dsp_fw_graph_parser.so
+vendor/lib64/libenn_dsp_kernels_cpu.so
+vendor/lib64/libgraphgen_ann_import.so
+vendor/lib64/libgraphgen_ann_nnc.so
+vendor/lib64/libgraphgen_api.so
+vendor/lib64/libgraphgen_export.so
+vendor/lib64/libgraphgen_import.so
+vendor/lib64/libgraphgen_intermediate_process.so
+vendor/lib64/libgraphgen_misc.so
+vendor/lib64/libgraphgen_network.so
+vendor/lib64/libir.so
+vendor/lib64/libnpu_compiler.so
+vendor/lib64/libnpuc_api.so
+vendor/lib64/libnpuc_backend.so
+vendor/lib64/libnpuc_cmdq.so
+vendor/lib64/libnpuc_common.so
+vendor/lib64/libnpuc_controller.so
+vendor/lib64/libnpuc_frontend.so
+vendor/lib64/libnpuc_graph.so
+vendor/lib64/libnpuc_template.so
+vendor/lib64/libsait_npu_compiler.so
+vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0-impl.so
+vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0.so
 
 # Neural Networks (Firmware)
 vendor/firmware/NPU_NFD_P4.7.tflite
@@ -182,58 +182,58 @@ vendor/firmware/vts.bin
 vendor/firmware/yuv2bayer.bin
 
 # Proca
--vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
+vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
 
 # RIL
--vendor/bin/cass
--vendor/bin/cbd
+vendor/bin/cass
+vendor/bin/cbd
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
--vendor/lib64/libengmode_client.so
--vendor/lib64/libfloatingfeature.so
+vendor/lib64/libengmode_client.so
+vendor/lib64/libfloatingfeature.so
 
 # RIL - from a54x - A546BXXU5BWK4
--vendor/bin/hw/rild|249bd469620af395bcca58153d40cee6c28bdcb5
--vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml|c3f8ea3f6228f2d572081b0c0ae29a251de4350b
--vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml|e9cdde9d05c5cce32f76bbb164437f43b3288157
--vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml|ebbe359a9b2d78cb88debe79d9183c039afb7c01
--vendor/lib/libsecril-client.so;MODULE_SUFFIX=_vendor|fd7cb317ad17fd6c5b94c69bc4eaef80631215f1
--vendor/lib/libsemnativecarrierfeature.so|56ed7bd5f596502cf9614b5d9ebf255ac4e1e73c
--vendor/lib64/libSemDataProps.so|023991c586ba36f42f06b7f9286cf417bcb8a9f8
--vendor/lib64/libSemTelephonyProps.so|cbde8c62e9126875501d26681873b81e75dcd8a0
--vendor/lib64/libril_sem.so|9bcd6054a5ebded9ba92f27ef00ab537ab1c09b9
--vendor/lib64/libsec-ril.so|f66b4199957f40d0e023141e86606696a740872f
--vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor|bae84e05d1c19dc5b41bfe2326dbf2744b1e412c
--vendor/lib64/libsemnativecarrierfeature.so|b69b820d8881d4e7bba426212e4aba31095bb437
--vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|738bc9ac0ca800b36e8b08652240ee01ddba6e47
--vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|6faa7fbeab4b7d335d434729ec22493fde30028c
--vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|fc3522bd787fa48ab80f53c0836cbb0c5ddf1b10
--vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|8645b1d3d2e944a38ec07ee8c69d9f7d817b3730
--vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|9b3b09c9bc2911b801d0de0caea13476a90f8776
--vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|611a9f8ca1a46b33471643e200e70ce28f963b75
+vendor/bin/hw/rild|249bd469620af395bcca58153d40cee6c28bdcb5
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml|c3f8ea3f6228f2d572081b0c0ae29a251de4350b
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml|e9cdde9d05c5cce32f76bbb164437f43b3288157
+vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml|ebbe359a9b2d78cb88debe79d9183c039afb7c01
+vendor/lib/libsecril-client.so;MODULE_SUFFIX=_vendor|fd7cb317ad17fd6c5b94c69bc4eaef80631215f1
+vendor/lib/libsemnativecarrierfeature.so|56ed7bd5f596502cf9614b5d9ebf255ac4e1e73c
+vendor/lib64/libSemDataProps.so|023991c586ba36f42f06b7f9286cf417bcb8a9f8
+vendor/lib64/libSemTelephonyProps.so|cbde8c62e9126875501d26681873b81e75dcd8a0
+vendor/lib64/libril_sem.so|9bcd6054a5ebded9ba92f27ef00ab537ab1c09b9
+vendor/lib64/libsec-ril.so|f66b4199957f40d0e023141e86606696a740872f
+vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor|bae84e05d1c19dc5b41bfe2326dbf2744b1e412c
+vendor/lib64/libsemnativecarrierfeature.so|b69b820d8881d4e7bba426212e4aba31095bb437
+vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|738bc9ac0ca800b36e8b08652240ee01ddba6e47
+vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|6faa7fbeab4b7d335d434729ec22493fde30028c
+vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|fc3522bd787fa48ab80f53c0836cbb0c5ddf1b10
+vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|8645b1d3d2e944a38ec07ee8c69d9f7d817b3730
+vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|9b3b09c9bc2911b801d0de0caea13476a90f8776
+vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|611a9f8ca1a46b33471643e200e70ce28f963b75
 
 # Secnative
--vendor/lib/libsecnativefeature.so
--vendor/lib64/libsecnativefeature.so
+vendor/lib/libsecnativefeature.so
+vendor/lib64/libsecnativefeature.so
 
 # Secure Element
--vendor/bin/hw/android.hardware.secure_element@1.2-service
+vendor/bin/hw/android.hardware.secure_element@1.2-service
 vendor/etc/init/android.hardware.secure_element@1.2-service.rc
 vendor/etc/libse-gto-hal.conf
--vendor/lib64/android.hardware.secure_element-impl-gto.so
--vendor/lib64/libsec_semRil.so
+vendor/lib64/android.hardware.secure_element-impl-gto.so
+vendor/lib64/libsec_semRil.so
 
 # Sensors
--vendor/lib64/sensors.flicker.so
--vendor/lib64/sensors.grip.so
+vendor/lib64/sensors.flicker.so
+vendor/lib64/sensors.grip.so
 
 # Teegris
--vendor/bin/tzdaemon
--vendor/bin/tzts_daemon
--vendor/lib64/libteecl.so
--vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000048444350
@@ -252,13 +252,13 @@ vendor/tee/ffffffff-0000-0000-0000-000000000030
 vendor/tee/tui/resolution_common/ID00000100
 
 # VaultKeeper
--vendor/bin/vaultkeeperd
--vendor/lib64/libstork_shared.so
--vendor/lib64/libvkmanager_vendor.so
--vendor/lib64/libvkservice.so
+vendor/bin/vaultkeeperd
+vendor/lib64/libstork_shared.so
+vendor/lib64/libvkmanager_vendor.so
+vendor/lib64/libvkservice.so
 
 # Widevine
--vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
--vendor/lib/libwvhidl.so
+vendor/lib/libwvhidl.so
