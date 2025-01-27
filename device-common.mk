@@ -107,7 +107,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
-    gralloc.exynos990 \
+    gralloc.universal990 \
     libion
 
 # Health
@@ -328,7 +328,8 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/samsung
+    hardware/samsung \
+    hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3
 
 # SoundTrigger
 PRODUCT_PACKAGES += \
