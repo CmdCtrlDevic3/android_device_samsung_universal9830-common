@@ -31,9 +31,10 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Audio
-BOARD_LOW_LATENCY_CAPTURE_DURATION := 20
-BOARD_USB_PLAYBACK_DURATION := 5
-BOARD_USE_MMAP_HW_VOLUME_CONTROL := true
+$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/universal9830-common:libaudioproxy)
+$(call soong_config_set,exynos_audio,PREDEFINED_LOW_CAPTURE_DURATION,20)
+$(call soong_config_set,exynos_audio,PREDEFINED_USB_PLAYBACK_DURATION,5)
+$(call soong_config_set,exynos_audio,PREDEFINED_USE_MMAP_HW_VOLUME_CONTROL,true)
 $(call soong_config_set,universal9830AudioVars,use_sec_audio_dynamic_nrec,true)
 $(call soong_config_set,universal9830AudioVars,use_sec_audio_param_update,false)
 $(call soong_config_set,universal9830AudioVars,use_sec_audio_resampler,true)
