@@ -295,6 +295,7 @@ PRODUCT_PACKAGES += \
     libnetutils.vendor:64 \
     libsqlite.vendor:64 \
     sehradiomanager \
+    cbd \
     vendor.samsung.rilchip.slsi.rc
 
 PRODUCT_COPY_FILES += \
@@ -325,6 +326,7 @@ PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung \
+    hardware/samsung_slsi-linaro/exynos/cpboot_v3 \
     hardware/samsung_slsi-linaro/exynos/libaudio/audiohal_comv1 \
     hardware/samsung_slsi-linaro/exynos/libaudio/sthal \
     hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3

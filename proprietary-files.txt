@@ -186,7 +186,6 @@ vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
 
 # RIL
 vendor/bin/cass
-vendor/bin/cbd
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_usagsm.bin
