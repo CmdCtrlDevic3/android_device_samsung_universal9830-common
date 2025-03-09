@@ -114,7 +114,7 @@ TARGET_KERNEL_CONFIG := exynos9830_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/universal9830
 
 # Keymaster
-TARGET_KEYMASTER_VARIANT := samsung
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/universal9830-common:libskeymaster4device)
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
