@@ -48,6 +48,9 @@ ro.vendor.eden.npu.version.path=/sys/devices/platform/npu_exynos/version
 # Factory Reset Protection
 ro.frp.pst=/dev/block/persistent
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Graphics
 debug.renderengine.backend=skiavkthreaded
 debug.sf.auto_latch_unsignaled=0
