@@ -102,7 +102,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_frame
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_exynos9830
+$(call soong_config_set,libinit,vendor_init_lib,//device/samsung/universal9830-common:libinit_exynos9830)
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image
