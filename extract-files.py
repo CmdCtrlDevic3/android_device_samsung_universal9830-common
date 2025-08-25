@@ -43,7 +43,6 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
         'libuuid',
-        'libsecril-client',
     ): lib_fixup_vendor_suffix,
 }
 

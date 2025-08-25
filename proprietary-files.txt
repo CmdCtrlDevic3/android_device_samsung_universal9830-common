@@ -198,13 +198,13 @@ vendor/bin/hw/rild|249bd469620af395bcca58153d40cee6c28bdcb5
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml|c3f8ea3f6228f2d572081b0c0ae29a251de4350b
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml|e9cdde9d05c5cce32f76bbb164437f43b3288157
 vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml|ebbe359a9b2d78cb88debe79d9183c039afb7c01
-vendor/lib/libsecril-client.so;MODULE_SUFFIX=_vendor|fd7cb317ad17fd6c5b94c69bc4eaef80631215f1
+vendor/lib/libsecril-client.so|fd7cb317ad17fd6c5b94c69bc4eaef80631215f1
 vendor/lib/libsemnativecarrierfeature.so|56ed7bd5f596502cf9614b5d9ebf255ac4e1e73c
 vendor/lib64/libSemDataProps.so|023991c586ba36f42f06b7f9286cf417bcb8a9f8
 vendor/lib64/libSemTelephonyProps.so|cbde8c62e9126875501d26681873b81e75dcd8a0
 vendor/lib64/libril_sem.so|9bcd6054a5ebded9ba92f27ef00ab537ab1c09b9
 vendor/lib64/libsec-ril.so|f66b4199957f40d0e023141e86606696a740872f
-vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor|bae84e05d1c19dc5b41bfe2326dbf2744b1e412c
+vendor/lib64/libsecril-client.so|bae84e05d1c19dc5b41bfe2326dbf2744b1e412c
 vendor/lib64/libsemnativecarrierfeature.so|b69b820d8881d4e7bba426212e4aba31095bb437
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|738bc9ac0ca800b36e8b08652240ee01ddba6e47
 vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|6faa7fbeab4b7d335d434729ec22493fde30028c
