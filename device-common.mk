@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
 
 # Livedisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.universal9830
+    vendor.lineage.livedisplay@2.0-service.samsung-exynos
 
 # Media
 PRODUCT_PACKAGES += \
@@ -351,7 +351,7 @@ PRODUCT_PACKAGES += \
 
 # Touch features
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.universal9830
+    vendor.lineage.touch@1.0-service.samsung
 
 # TUI
 PRODUCT_PACKAGES += \

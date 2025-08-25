@@ -1,5 +1,3 @@
 subdirs = [
     "audio/proxy",
-    "livedisplay",
-    "touch",
 ]
