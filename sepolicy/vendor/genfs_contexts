@@ -27,6 +27,8 @@ genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-4/4-0066/max77705-fuelgauge/
 genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-6/6-0066/max77705-fuelgauge/power_supply/max77705-fuelgauge/type  u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-4/4-0066/max77705-charger/power_supply/otg/type                   u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-6/6-0066/max77705-charger/power_supply/otg/type                   u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-4/4-0066/max77705-charger/power_supply/otg/online                 u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-6/6-0066/max77705-charger/power_supply/otg/online                 u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-4/4-0057/power_supply/pca9468-charger/type                        u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/105c0000.hsi2c/i2c-6/6-0057/power_supply/pca9468-charger/type                        u:object_r:sysfs_battery:s0
 
