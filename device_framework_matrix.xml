@@ -9,14 +9,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.samsung_slsi.hardware.geoTransService</name>
-        <version>1.0</version>
-        <interface>
-            <name>IGeoTransService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
         <version>2.1</version>
         <interface>
