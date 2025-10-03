@@ -150,6 +150,7 @@ TARGET_SOC := exynos990
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
