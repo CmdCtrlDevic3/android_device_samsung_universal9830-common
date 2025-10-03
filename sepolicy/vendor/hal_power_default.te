@@ -17,3 +17,6 @@ allow hal_power_default {
     sysfs_mif_writable
     sysfs_power_writable
 }:file rw_file_perms;
+
+allow hal_power_default fwk_stats_service:service_manager find;
+dontaudit hal_power_default hal_thermal_service:service_manager find;

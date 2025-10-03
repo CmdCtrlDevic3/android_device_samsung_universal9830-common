@@ -22,3 +22,5 @@ allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
 allow init hidl_base_hwservice:hwservice_manager add;
 
 allow init socket_device:sock_file { create setattr unlink };
+
+allow init self:capability sys_nice;
