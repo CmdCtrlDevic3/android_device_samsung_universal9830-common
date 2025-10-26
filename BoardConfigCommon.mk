@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,25 +30,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
-# Audio
-$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/universal9830-common:libaudioproxy)
-$(call soong_config_set,exynos_audio,PREDEFINED_LOW_CAPTURE_DURATION,20)
-$(call soong_config_set,exynos_audio,PREDEFINED_USB_PLAYBACK_DURATION,5)
-$(call soong_config_set,exynos_audio,PREDEFINED_USE_MMAP_HW_VOLUME_CONTROL,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_dynamic_nrec,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_param_update,false)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_resampler,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_samsungrecord,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_sound_trigger_enabled,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_support_listenback_dspeffect,true)
-$(call soong_config_set,universal9830AudioVars,use_soundtrigger_hal,true)
-$(call soong_config_set,universal9830AudioVars,use_usb_offload,true)
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-
-# Camera
-$(call soong_config_set,samsungCameraVars,usage_64bit,true)
 
 # Compatibility Matrix
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
@@ -103,9 +86,6 @@ TARGET_USES_VULKAN := true
 # HIDL Manifest
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
-# Init
-$(call soong_config_set,libinit,vendor_init_lib,//device/samsung/universal9830-common:libinit_exynos9830)
-
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -120,22 +100,8 @@ KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_CONFIG := exynos9830_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/universal9830
 
-# Keymaster
-$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/universal9830-common:libskeymaster4device)
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-
-# Lineage health
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/charging_enabled)
-$(call soong_config_set,lineage_health,charging_control_charging_enabled,1)
-$(call soong_config_set,lineage_health,charging_control_charging_disabled,0)
-$(call soong_config_set,lineage_health,charging_control_charging_bypass,true)
-$(call soong_config_set,lineage_health,charging_control_charging_toggle,true)
-$(call soong_config_set,lineage_health,charging_control_charging_deadline,false)
-$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
-$(call soong_config_set,lineage_health,fast_charge_value_none,1)
-$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
@@ -169,7 +135,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-$(call soong_config_set,cbd,protocol,sipc)
 
 # SECComp filters
 BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
@@ -182,14 +147,6 @@ include device/lineage/sepolicy/exynos/sepolicy.mk
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/samsung_slsi/sepolicy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-
-# SoundTrigger
-$(call soong_config_set,exynos_st,soundtrigger_config_path,$(COMMON_PATH)/configs/sthal)
-$(call soong_config_set,exynos_st,use_soundtrigger_hal_2_3,true)
-$(call soong_config_set,exynos_st,use_soundtrigger_hal_mmap,true)
-
-# USB
-$(call soong_config_set,samsungUsbGadgetVars,gadget_name,10e00000.dwc3)
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

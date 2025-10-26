@@ -50,6 +50,19 @@ PRODUCT_COPY_FILES += \
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//$(LOCAL_PATH):libaudioproxy)
+$(call soong_config_set,exynos_audio,PREDEFINED_LOW_CAPTURE_DURATION,20)
+$(call soong_config_set,exynos_audio,PREDEFINED_USB_PLAYBACK_DURATION,5)
+$(call soong_config_set,exynos_audio,PREDEFINED_USE_MMAP_HW_VOLUME_CONTROL,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_dynamic_nrec,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_param_update,false)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_resampler,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_samsungrecord,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_sound_trigger_enabled,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_support_listenback_dspeffect,true)
+$(call soong_config_set,universal9830AudioVars,use_soundtrigger_hal,true)
+$(call soong_config_set,universal9830AudioVars,use_usb_offload,true)
+
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
@@ -62,6 +75,8 @@ PRODUCT_PACKAGES += \
     libhwjpeg \
     libsensorndkbridge \
     libutilscallstack.vendor
+
+$(call soong_config_set,samsungCameraVars,usage_64bit,true)
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -124,6 +139,8 @@ PRODUCT_PACKAGES += \
     init.exynos990.rc \
     ueventd.exynos990.rc
 
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_exynos9830)
+
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
@@ -143,9 +160,21 @@ PRODUCT_PACKAGES += \
     libshim_crypto:64 \
     libssl-tm
 
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/universal9830-common:libskeymaster4device)
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
+
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/charging_enabled)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,1)
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_bypass,true)
+$(call soong_config_set,lineage_health,charging_control_charging_toggle,true)
+$(call soong_config_set,lineage_health,charging_control_charging_deadline,false)
+$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
+$(call soong_config_set,lineage_health,fast_charge_value_none,1)
+$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
 # Livedisplay
 PRODUCT_PACKAGES += \
@@ -303,6 +332,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
 
+$(call soong_config_set,cbd,protocol,sipc)
+
 # SamsungDoze
 PRODUCT_PACKAGES += \
     SamsungDoze
@@ -341,6 +372,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+$(call soong_config_set,exynos_st,soundtrigger_config_path,$(LOCAL_PATH)/configs/sthal)
+$(call soong_config_set,exynos_st,use_soundtrigger_hal_2_3,true)
+$(call soong_config_set,exynos_st,use_soundtrigger_hal_mmap,true)
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.pixel \
@@ -371,6 +406,8 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung \
     android.hardware.usb.gadget-service.samsung \
     init.exynos990.usb.rc
+
+$(call soong_config_set,samsungUsbGadgetVars,gadget_name,10e00000.dwc3)
 
 # Vaultkeeper
 PRODUCT_PACKAGES += \
