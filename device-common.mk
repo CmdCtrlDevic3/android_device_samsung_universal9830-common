@@ -49,15 +49,15 @@ TARGET_EXCLUDES_AUDIOFX := true
 $(call soong_config_set,exynos_audio,PROXY_LIBRARY,//$(LOCAL_PATH):libaudioproxy)
 $(call soong_config_set,exynos_audio,PREDEFINED_LOW_CAPTURE_DURATION,20)
 $(call soong_config_set,exynos_audio,PREDEFINED_USB_PLAYBACK_DURATION,5)
-$(call soong_config_set,exynos_audio,PREDEFINED_USE_MMAP_HW_VOLUME_CONTROL,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_dynamic_nrec,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_param_update,false)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_resampler,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_samsungrecord,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_sound_trigger_enabled,true)
-$(call soong_config_set,universal9830AudioVars,use_sec_audio_support_listenback_dspeffect,true)
-$(call soong_config_set,universal9830AudioVars,use_soundtrigger_hal,true)
-$(call soong_config_set,universal9830AudioVars,use_usb_offload,true)
+$(call soong_config_set_bool,exynos_audio,PREDEFINED_USE_MMAP_HW_VOLUME_CONTROL,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_sec_audio_dynamic_nrec,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_sec_audio_param_update,false)
+$(call soong_config_set_bool,universal9830AudioVars,use_sec_audio_resampler,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_sec_audio_samsungrecord,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_sec_audio_sound_trigger_enabled,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_sec_audio_support_listenback_dspeffect,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_soundtrigger_hal,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_usb_offload,true)
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     libutilscallstack.vendor
 
-$(call soong_config_set,samsungCameraVars,usage_64bit,true)
+$(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -169,9 +169,9 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/charging_enabled)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,1)
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,0)
-$(call soong_config_set,lineage_health,charging_control_charging_bypass,true)
-$(call soong_config_set,lineage_health,charging_control_charging_toggle,true)
-$(call soong_config_set,lineage_health,charging_control_charging_deadline,false)
+$(call soong_config_set_bool,lineage_health,charging_control_charging_bypass,true)
+$(call soong_config_set_bool,lineage_health,charging_control_charging_toggle,true)
+$(call soong_config_set_bool,lineage_health,charging_control_charging_deadline,false)
 $(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
 $(call soong_config_set,lineage_health,fast_charge_value_none,1)
 $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
@@ -369,8 +369,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 $(call soong_config_set,exynos_st,soundtrigger_config_path,$(LOCAL_PATH)/configs/sthal)
-$(call soong_config_set,exynos_st,use_soundtrigger_hal_2_3,true)
-$(call soong_config_set,exynos_st,use_soundtrigger_hal_mmap,true)
+$(call soong_config_set_bool,exynos_st,use_soundtrigger_hal_2_3,true)
+$(call soong_config_set_bool,exynos_st,use_soundtrigger_hal_mmap,true)
 
 # Thermal
 PRODUCT_PACKAGES += \
