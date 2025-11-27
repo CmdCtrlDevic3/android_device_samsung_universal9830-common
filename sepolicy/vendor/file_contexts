@@ -53,7 +53,6 @@
 /dev/mali[0-9]    u:object_r:gpu_device:s0
 
 # NFC
-/dev/sec-nfc    u:object_r:nfc_device:s0
 /dev/p3         u:object_r:nfc_device:s0
 
  # RIL
