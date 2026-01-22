@@ -224,7 +224,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureOverlayCommon \
     FrameworkResOverlayCommon \
-    LineageDialerOverlayCommon \
     LineageSDKOverlayCommon \
     SettingsOverlayCommon \
     SystemUIOverlayCommon
