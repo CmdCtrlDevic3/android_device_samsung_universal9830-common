@@ -195,6 +195,9 @@
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
 
+    <!-- Whether device has a screen with a higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
@@ -215,6 +218,14 @@
     <!-- Note: This config is deprecated, use config_pinnerAssistantPinBytes instead.
          True if assistant app should be pinned via Pinner Service -->
     <bool name="config_pinnerAssistantApp">true</bool>
+
+    <!-- Defines the actions shown in advanced reboot submenu -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_fastboot</item>
+        <item>restart_download</item>
+    </string-array>
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>

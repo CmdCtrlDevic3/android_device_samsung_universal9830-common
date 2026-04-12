@@ -39,7 +39,6 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9432989696
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product odm
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE := 9437184000
--include vendor/lineage/config/BoardConfigReservedSize.mk
 
 # DTB
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -75,10 +74,6 @@ TARGET_USES_VULKAN := true
 
 # HIDL Manifest
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-
-ifneq ($(TARGET_DEVICE),r8s)
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/hubble/manifest.xml
-endif
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -143,7 +138,6 @@ BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 VENDOR_SECURITY_PATCH := 2025-07-01
 
 # SELinux
-include device/lineage/sepolicy/exynos/sepolicy.mk
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/samsung_slsi/sepolicy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
